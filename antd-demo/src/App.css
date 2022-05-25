@@ -1,8 +1,16 @@
-@import '~antd/dist/antd.css';
+/* @import '~antd/dist/antd.css'; */
 .App {
   text-align: center;
 }
+.primaryBtn {
+  background-color: #0000FF;
+  color: #fff;
 
+}
+.dangerBtn{
+  background-color: #FF0000;
+  color: #fff;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
