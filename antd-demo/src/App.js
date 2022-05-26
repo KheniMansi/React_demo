@@ -4,6 +4,7 @@ import Antd from './Component/Antd';
 import CompA from './ComponentContext/CompA';
 import Parent from './ComponentCallBack/Parent';
 import Usememo from './ComponentUseMemo/Usememo';
+import UseRef from './ComponentUseRef/UseRef';
 
 const Text = createContext();
 const Text2 = createContext();
@@ -20,6 +21,8 @@ function App() {
       {/* <CompA /> */}
       <Parent />
       <Usememo />
+      
+      <UseRef />
     </>
   );
 }
