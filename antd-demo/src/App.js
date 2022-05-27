@@ -5,6 +5,9 @@ import CompA from './ComponentContext/CompA';
 import Parent from './ComponentCallBack/Parent';
 import Usememo from './ComponentUseMemo/Usememo';
 import UseRef from './ComponentUseRef/UseRef';
+import First from './ComponentUseImperative/First';
+import LayoutEffact from './ComponentUseLayoutEffect/LayoutEffact';
+import Test from './ComponentUseDebugValue/Test';
 
 const Text = createContext();
 const Text2 = createContext();
@@ -23,6 +26,13 @@ function App() {
       <Usememo />
       
       <UseRef />
+      {/* useImperative */}
+
+      <First />
+      <LayoutEffact />
+
+      <Test />
+
     </>
   );
 }
