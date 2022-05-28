@@ -6,8 +6,11 @@ import Parent from './ComponentCallBack/Parent';
 import Usememo from './ComponentUseMemo/Usememo';
 import UseRef from './ComponentUseRef/UseRef';
 import First from './ComponentUseImperative/First';
-import LayoutEffact from './ComponentUseLayoutEffect/LayoutEffact';
+// import LayoutEffact from './ComponentUseLayoutEffect/LayoutEffact';
 import Test from './ComponentUseDebugValue/Test';
+import DemoParent from './ComponentDemo/DemoParent';
+import ParentDemo from './ComponentDemoState/ParentDemo';
+import ReduxDemo from './ComponentRedux/ReduxDemo';
 
 const Text = createContext();
 const Text2 = createContext();
@@ -22,6 +25,7 @@ function App() {
         </Text2.Provider>
       </Text.Provider>
       {/* <CompA /> */}
+      
       <Parent />
       <Usememo />
       
@@ -29,10 +33,12 @@ function App() {
       {/* useImperative */}
 
       <First />
-      <LayoutEffact />
+      {/* <LayoutEffact /> */}
 
       <Test />
-
+      <DemoParent />
+      <ParentDemo />
+      <ReduxDemo />
     </>
   );
 }

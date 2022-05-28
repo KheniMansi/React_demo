@@ -14,7 +14,7 @@ export default function LayoutEffact() {
         }
     }, [loading])
 
-
+    console.log(setLoad(false));
     useEffect(() => {
         console.log("only effect")
 
