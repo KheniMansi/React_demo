@@ -1,15 +1,16 @@
 import React from "react";
+import {useSelector, useDispatch} from 'react-redux';
+import { increment, decrement } from "./action";
 
-export default function ReduxDemo(){
-    return(
+export default function ReduxDemo() {
+    const counter = useSelector(state => state.counter);
+    const dispatch = useDispatch();
+    return (
         <>
             <div>
-                <h2>Incremkent/Decrement</h2>
-                <div className="quantity">
-                    <a href="/#" className="quantity_minus"><span> - </span></a>
-                    <input type="number" value="0" />
-                    <a href="/#"><span> + </span></a>
-                </div>
+                <h1>Counter {counter}</h1>
+                <button onClick={() => dispatch(increment(5))}>+</button>
+                <button onClick={() => dispatch(decrement())}>-</button>
             </div>
         </>
     )

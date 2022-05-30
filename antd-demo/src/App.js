@@ -11,11 +11,13 @@ import Test from './ComponentUseDebugValue/Test';
 import DemoParent from './ComponentDemo/DemoParent';
 import ParentDemo from './ComponentDemoState/ParentDemo';
 import ReduxDemo from './ComponentRedux/ReduxDemo';
+import Main from './ComponentRoutes/Main';
 
 const Text = createContext();
 const Text2 = createContext();
 
 function App() {
+ 
   return (
     <>
       <Antd />
@@ -39,6 +41,7 @@ function App() {
       <DemoParent />
       <ParentDemo />
       <ReduxDemo />
+      <Main />
     </>
   );
 }
