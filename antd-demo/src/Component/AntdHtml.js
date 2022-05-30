@@ -1,14 +1,23 @@
-import React from "react";
-import {Button} from "antd";
+import React, { useState } from "react";
 
-
-export default function AntdDemo(props){
+export default function Button(props){
+    const [loader, setLoader] = useState('');
+    const [color, setColor] = useState('');
+    
     const handleClick = () => {
-        props.setAllValues({...props.allValues, loading: true, danger: true, type: "dashed"})
+        // console.log(props.loading);
+        if(props.loading === true){
+           setLoader(<i className="fa fa-spinner" aria-hidden="true"></i>);
+        } 
+        if(props.color === 'primary'){
+            setColor('primaryBtn')
+        } else if(props.color === 'danger'){
+            setColor('dangerBtn')
+        }
     }
     return(
         <>
-            <Button onClick={handleClick} loading={props.allValues.loading} danger={props.allValues.danger} type={props.allValues.type}>Button</Button>
+            <button onClick={handleClick} className={color}><span>{loader}</span> Hello World</button>
         </>
     )
 }
