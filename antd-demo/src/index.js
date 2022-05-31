@@ -5,7 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 // import store from './ComponentRedux/store';
 import { createStore } from 'redux';
-import allReducers from './ComponentRedux/reducers';
+import allReducers from './ComponentCrud/reducers';
 import { Provider } from 'react-redux';
 import { BrowserRouter } from 'react-router-dom';
 
@@ -18,7 +18,7 @@ root.render(
       <React.StrictMode>
         <App />
       </React.StrictMode>
-    </Provider>
+      </Provider>
   </BrowserRouter>
 );
 
